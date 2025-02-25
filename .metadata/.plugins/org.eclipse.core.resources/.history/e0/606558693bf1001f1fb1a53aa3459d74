@@ -1,0 +1,75 @@
+package StepDefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import Pages.LoginPage;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+
+
+
+public class LoginSteps {
+
+	
+	 WebDriver driver= null;
+     LoginPage login;
+	@Given("User into the Login Page")
+	public void user_into_the_login_page() {
+		
+		System.setProperty("webDriver.chrome.driver", "C:/New folder (2)/SF/SalesForceDemo/src/test/resources/drivers/chromedriver_proxy.exe");
+		driver= new ChromeDriver();
+		//driver = new EdgeDriver();
+		//  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+		driver.manage().window().maximize();
+		driver.get("https://login.salesforce.com/?locale=in");
+	   
+	}
+
+////	@Given("User Enter the {string}")
+//	public void user_enter_the(String string) {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+
+//	@When("User Enter the {string}")
+//	public void user_enter_the1(String string) {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+//	}
+
+	@When("Verify the logo of the current page")
+	public void verify_the_logo_of_the_current_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User click the login button")
+	public void user_click_the_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Close the Browser")
+	public void close_the_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	
+
+	
+
+
+
+
+}

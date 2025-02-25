@@ -1,0 +1,5 @@
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at Pages.Home_ViewAllCart_page.clickViewAll(Home_ViewAllCart_page.java:27)
+	at StepDefinitions.Home_viewallcards.slect_viw_all_cart(Home_viewallcards.java:20)
+	at ✽.slect viw all cart(file:///C:/Users/10669/git/Demo_Guru/SampleTest/src/test/resources/Features/login.feature:21)
+

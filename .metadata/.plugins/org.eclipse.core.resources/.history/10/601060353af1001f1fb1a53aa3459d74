@@ -1,0 +1,43 @@
+package StepDefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+
+
+
+public class LoginSteps {
+
+	WebDriver driver = null;
+
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+
+		System.setProperty("webDriver.chrome.driver", "C:/Users/10669/OneDrive - Expleo France/Desktop/SampleTest/src/test/resources/drivers/chromedriver_proxy.exe");
+		driver= new ChromeDriver();
+		//driver = new EdgeDriver();
+		//  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+		driver.manage().window().maximize();
+		driver.get("https://demo.cyclos.org/ui/home");
+		System.out.print("homepage");
+
+		
+	}
+
+	
+
+
+
+
+}

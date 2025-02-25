@@ -1,0 +1,36 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+WebDriver driver;
+	
+	By txt_username = By.id("username");
+	By txt_password = By.id("password");
+	By btn_Login = By.id("Login");
+	By lbl_logo = By.id("logo");
+	
+	public void enterUsername(String string) {
+		driver.findElement(txt_username).sendKeys(string);
+	
+	}
+	public void enterPassword(String password) {
+		driver.findElement(txt_password).sendKeys(password);
+	
+	}
+	
+	public void clickLogin() {
+		driver.findElement(btn_Login).click();
+	
+	}
+    public void isAppLogoDisplayed() {
+    	driver.findElement(lbl_logo).isDisplayed();
+    	
+    }
+	
+
+
+
+
+}

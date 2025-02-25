@@ -1,0 +1,13 @@
+Feature: Test login Functionality
+ Background: Execute before all scenarios
+    Given User into the Login Page
+
+  
+  Scenario: Check login with valid credentials
+    Given User Enter username and password
+    When Verify the logo of the current page
+    And User click the login button
+    Then Close the Browser
+
+    
+  
